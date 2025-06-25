@@ -954,8 +954,7 @@
 
 
 
-<!-- Js links -->
-<script src="./app.js"></script>
+
 <!-- Feather Icons -->
 <script src="https://unpkg.com/feather-icons"></script>
 <!-- Flatpickr CDN JS -->
@@ -964,109 +963,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- AOS JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    feather.replace()
-</script>
-
-
-
-
-
-
-
-
-<script>
-  AOS.init(); // AOS init
-
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
-</script>
-
-
-<script>
-  feather.replace();
-
-  function toggleFavorite(btn) {
-    const icon = btn.querySelector('i');
-    if (btn.classList.contains('active')) {
-      btn.classList.remove('active');
-      icon.classList.remove('fill-red-500');
-      icon.classList.add('text-red-500');
-    } else {
-      btn.classList.add('active');
-      icon.classList.remove('text-red-500');
-      icon.classList.add('fill-red-500');
-    }
-  }
-</script>
-
-
-<!-- Counter Animation JS -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".counter");
-    const speed = 100; // Lower = faster
-
-    counters.forEach(counter => {
-      const animate = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-        const inc = Math.ceil(target / speed);
-
-        if (count < target) {
-          counter.innerText = count + inc;
-          setTimeout(animate, 10);
-        } else {
-          counter.innerText = target;
-        }
-      };
-
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            animate();
-            observer.unobserve(counter);
-          }
-        });
-      }, { threshold: 0.5 });
-
-      observer.observe(counter);
-    });
-  });
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Js links -->
+<script src="./app.js"></script>
 
 
 </body>
