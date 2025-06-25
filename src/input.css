@@ -2,3 +2,48 @@
 
 
 
+
+@keyframes wave-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.wave-ring {
+  position: absolute;
+  border-radius: 9999px;
+  border: 2px solid #ef4444;
+  /*red-500*/background-color: #ef4444;
+  animation: wave-ring 3s infinite ease-out;
+  -webkit-animation: wave-ring 3s infinite ease-out;
+}
+.wave-ring:nth-child(1) { animation-delay: 0s; }
+.wave-ring:nth-child(2) { animation-delay: 1.5s; }
+.wave-ring:nth-child(3) { animation-delay: 2s; }
+.wave-ring:nth-child(4) { animation-delay: 2.5s; }
+.wave-ring:nth-child(5) { animation-delay: 3s; }
+
+
+
+
+@keyframes write {
+  0% {
+    max-width: 0;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+
+ .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+  }
