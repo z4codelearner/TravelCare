@@ -1,3 +1,4 @@
+
 // ========== DOM Ready Wrapper ==========
 document.addEventListener('DOMContentLoaded', function () {
   // ========== Navbar Dropdowns ==========
@@ -192,3 +193,38 @@ function toggleFavorite(btn) {
     icon.classList.add('fill-red-500');
   }
 }
+
+// ========== Testimonial Swiper ==========
+  document.addEventListener("DOMContentLoaded", function () {
+    feather.replace(); // Feather icons init
+
+    const swiper = new Swiper('.testimonial-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      spaceBetween: 20,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  });
+
+
+
+
+
+
