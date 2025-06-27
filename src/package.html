@@ -208,17 +208,688 @@
         <!-- Navbar End -->
 
         <!-- Hero Section Start -->
-        <section class="relative -mt-24 py-42 table w-full items-center bg-[url('../assets/img/island1.jpg')] bg-top bg-no-repeat bg-cover overflow-hidden lg:pt-56 lg:pb-56 xl:pb-64">
-            <div class="absolute inset-0 bg-black/50"></div>
+        <section class="relative -mt-24 pt-42 table w-full items-center bg-[url('../assets/img/island12.jpg')] bg-top bg-no-repeat bg-cover overflow-hidden lg:pt-48">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
             <div class="container mx-auto px-3 md:px-6 lg:px-8 relative z-10">
-                
+                <div class="flex flex-col items-center justify-center text-center">
+                    <h1 class="text-3xl lg:text-5xl font-bold text-slate-100">Our Packages</h1>
+                    <ul class="flex items-center justify-center gap-1 mt-20 lg:mt-40 mb-10">
+                        <li><a href="./home.html" class="text-slate-400 hover:text-red-500 transition-all duration-300 font-bold">Home</a></li>
+                        <li class="text-slate-400">
+                            <i data-feather="chevron-right" class="w-4 h-4 inline"></i>
+                        </li>
+                        <li><p href="" class="text-red-600/75 font-bold cursor-none">Our Packages</p></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- Hero Section End -->
 
 
+
+        <!-- Popular Tours Section Start -->
+        <section class="bg-slate-900 py-10 md:py-16 lg:py-20 xl:py-24">
+            <div class="container mx-auto px-3 md:px-6 lg:px-8">
+                <!-- Tours packages Start -->
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+                    <!-- Card 1-->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island1.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">10% Off</span>
+                            </div>
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 2-->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island2.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <!-- <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">10% Off</span>
+                            </div> -->
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 3-->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island3.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <!-- <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">10% Off</span>
+                            </div> -->
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 4-->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island4.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">10% Off</span>
+                            </div>
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island5.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">30% Off</span>
+                            </div>
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island9.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <!-- <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">10% Off</span>
+                            </div> -->
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island7.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <!-- <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">10% Off</span>
+                            </div> -->
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island8.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">20% Off</span>
+                            </div>
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="group rounded-md shadow-sm shadow-gray-700 overflow-hidden">
+                        <div class="relative rounded-t-md shadow-sm shadow-gray-700 mx-3 mt-3 overflow-hidden">
+                            <img src="../assets/img/island11.jpg" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" alt="Cuba Sailing Adventure">
+
+                            <!-- Top Left Discount -->
+                            <div class="absolute top-0 start-0 p-4 z-10">
+                                <span class="bg-red-500 text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">50% Off</span>
+                            </div>
+
+                            <!-- Top Right Icon -->
+                            <div class="absolute top-4 right-4 z-20">
+                                <button onclick="toggleFavorite(this)" class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-950/80 transition-all duration-300 group">
+                                <i data-feather="heart" class="w-4 h-4 text-red-500 hover:fill-red-500 transition-all duration-300 group-[.active]:fill-red-500"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div>
+                                <div class="">
+                                    <p class="text-slate-300 text-sm mt-2 flex items-center">
+                                        <i data-feather="map-pin" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1">Dubai, UAE</span>
+                                    </p>
+
+                                    <span class="text-sm text-white/80 mt-1">🏝️ 3 Nights, 2 Adults</span>
+                                </div>
+
+                                <h2 class="text-slate-100 font-bold text-lg mt-2">
+                                    <a href="./package-details.html" class="hover:text-red-500 transition-colors duration-300">Cuba Sailing Adventure</a>
+                                </h2>
+
+                                <div class="flex items-center gap-2 mt-2">
+                                    <p class="text-slate-300 ms-1">Rating:</p>
+                                    <!-- Stars -->
+                                    <div class="flex items-center gap-1">
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                        <i data-feather="star" class="w-4 h-4 text-yellow-500 fill-yellow-500"></i>
+                                    </div>
+
+                                    <p class="text-slate-300 font-semibold">4.5 <span>(50)</span></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 pt-4 flex justify-between items-center border-t border-slate-800">
+                                
+                                <div class="flex flex-1 justify-between items-center">
+                                    <p class="text-slate-300 font-medium mt-2 flex items-center">
+                                        <i data-feather="dollar-sign" class="w-4 h-4 text-red-500"></i>
+                                        <span class="ms-1 text-red-500">$58 / Day</span>
+                                    </p>
+
+                                    <a href="./package-details.html" class="inline-block mt-4 text-slate-400 hover:text-red-600 transition-colors duration-300">
+                                        Explore Now <i data-feather="arrow-right" class="w-4 h-4 inline"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Tours packages End -->
+
+                <!-- Pagination Start -->
+                <div class="grid md:grid-cols-12 grid-cols-1 mt-10">
+                    <div class="md:col-span-12 text-center">
+                        <nav aria-label="Page navigation">
+                            <ul class="inline-flex items-center -space-x-px text-sm">
+                                <!-- Prev Button -->
+                                <li>
+                                    <a href="#"
+                                        class="size-[40px] inline-flex justify-center items-center rounded-s-3xl bg-slate-900 border border-gray-800 text-gray-500 hover:text-white hover:bg-red-500 transition-all duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <!-- Page Numbers -->
+                                <li>
+                                    <a href="#"
+                                    class="size-[40px] inline-flex justify-center items-center bg-slate-900 border border-gray-800 text-gray-500 hover:text-white hover:bg-red-500 transition-all duration-300">1</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                    class="size-[40px] inline-flex justify-center items-center bg-slate-900 border border-gray-800 text-gray-500 hover:text-white hover:bg-red-500 transition-all duration-300">2</a>
+                                </li>
+                                <li><a href="#"
+                                    class="z-10 size-[40px] inline-flex justify-center items-center bg-red-500 border border-red-500 text-white font-semibold">3</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                    class="size-[40px] inline-flex justify-center items-center bg-slate-900 border border-gray-800 text-gray-500 hover:text-white hover:bg-red-500 transition-all duration-300">4</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                    class="size-[40px] inline-flex justify-center items-center bg-slate-900 border border-gray-800 text-gray-500 hover:text-white hover:bg-red-500 transition-all duration-300">5</a>
+                                </li>
+
+                                <!-- Next Button -->
+                                <li>
+                                    <a href="#"
+                                        class="size-[40px] inline-flex justify-center items-center rounded-e-3xl bg-slate-900 border border-gray-800 text-gray-500 hover:text-white hover:bg-red-500 transition-all duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rtl:rotate-180" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Pagination End -->
+
+            </div>
+
+        </section>
+        <!-- Popular Tours Section End -->
+
+
         <!-- Footer Start -->
-        <footer class="footer bg-slate-900 dark:bg-slate-800 relative text-gray-200 dark:text-gray-200">
+        <footer class="footer bg-slate-950 relative text-gray-200">
             <div class="container mx-auto relative px-3 md:px-6 lg:px-8">
                 <div class="grid grid-cols-12">
                     <div class="col-span-12">
@@ -233,11 +904,31 @@
                                     <p class="mt-6 text-gray-300">Pouch Care is a travel agency that specializes in providing personalized travel experiences to its clients.</p>
                                     <ul class="list-none mt-6 flex gap-2 flex-wrap">
                                         <!-- Social Icons -->
-                                        <li><a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300"><i data-feather="facebook"></i></a></li>
-                                        <li><a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300"><i data-feather="twitter"></i></a></li>
-                                        <li><a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300"><i data-feather="instagram"></i></a></li>
-                                        <li><a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300"><i data-feather="linkedin"></i></a></li>
-                                        <li><a href="mailto:contact@example.com" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300"><i data-feather="mail"></i></a></li>
+                                        <li>
+                                            <a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300">
+                                                <i data-feather="facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300">
+                                                <i data-feather="twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300">
+                                                <i data-feather="instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300">
+                                                <i data-feather="linkedin"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:contact@example.com" class="size-8 inline-flex items-center justify-center border border-gray-800 transition-all duration-300 rounded-md hover:bg-red-500 hover:text-white text-slate-300">
+                                                <i data-feather="mail"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
 
@@ -306,7 +997,7 @@
                 </div>
             </div>
 
-            <div class="py-6 border-t border-gray-800 dark:border-gray-700">
+            <div class="py-6 border-t border-gray-800 ">
                 <div class="container mx-auto text-center">
                     <p class="text-sm flex items-center justify-center gap-1">
                         © <script>document.write(new Date().getFullYear())</script> 2025 Pouch Care Travel Agency. Design with <i data-feather="heart" class="fill-red-600 text-red-600 w-4 h-4"></i> by
@@ -316,6 +1007,13 @@
         </footer>
         <!-- Footer End -->
 
+
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn"
+        class="fixed bottom-6 right-6 p-1 bg-red-500/10 text-white rounded-full shadow-lg transition-opacity duration-500 opacity-0 pointer-events-none animate-bounce hover:bg-red-600 group"
+        title="Back to top">
+        <i data-feather="arrow-up" class="w-5 h-10 text-red-600 group-hover:text-white transition-all duration-300"></i>
+        </button>
 
 
         <!-- Feather Icons -->

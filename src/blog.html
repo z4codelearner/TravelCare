@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LightGallery with Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- lightGallery CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" />
+</head>
+<body class="bg-gray-100 p-10">
+
+  <!-- ✅ GALLERY START -->
+  <div id="lightbox-gallery" class="grid grid-cols-12 gap-4">
+
+    <div class="md:col-span-8 col-span-7">
+      <div class="group relative overflow-hidden rounded shadow-sm dark:shadow-gray-800">
+        <a href="../assets/img/island12.jpg" data-lg-size="1024-768" class="block">
+          <img loading="lazy" src="../assets/img/island12.jpg" class="w-full lg:h-60 md:h-44 h-48 object-cover" alt="Island">
+          <div class="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
+          <div class="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
+            <span class="inline-flex justify-center items-center size-9 bg-red-500 text-white rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- ✅ GALLERY END -->
+
+  <!-- lightGallery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+  <script>
+    lightGallery(document.getElementById("lightbox-gallery"), {
+      selector: 'a',
+      plugins: [lgZoom, lgThumbnail],
+      speed: 500,
+    });
+  </script>
+</body>
+</html>

@@ -223,8 +223,54 @@ function toggleFavorite(btn) {
     });
   });
 
+  // ========== Scroll to Top Button ==========
+  const scrollBtn = document.getElementById("scrollToTopBtn");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.remove("opacity-0", "pointer-events-none");
+      scrollBtn.classList.add("opacity-100", "pointer-events-auto");
+    } else {
+      scrollBtn.classList.remove("opacity-100", "pointer-events-auto");
+      scrollBtn.classList.add("opacity-0", "pointer-events-none");
+    }
+  });
 
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
+// ========== LightGallery ==========
 
+    lightGallery(document.getElementById("lightbox-gallery"), {
+      selector: 'a',
+      plugins: [lgZoom, lgThumbnail],
+      speed: 500,
+    });
 
+//  ========== FAQ Accordion ==========
+  const headers = document.querySelectorAll("#faqAccordion .accordion-header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const body = header.nextElementSibling;
+      const icon = header.querySelector(".accordion-icon");
+      const isOpen = !body.classList.contains("hidden");
+
+      // Reset all accordions
+      document.querySelectorAll("#faqAccordion .accordion-body").forEach(b => b.classList.add("hidden"));
+      document.querySelectorAll("#faqAccordion .accordion-icon").forEach(i => i.classList.remove("rotate-180", "text-red-500"));
+      document.querySelectorAll("#faqAccordion .accordion-header").forEach(h => {
+        h.classList.remove("bg-red-500", "text-white");
+        h.classList.add("bg-transparent", "text-white");
+      });
+
+      // Activate current
+      if (!isOpen) {
+        body.classList.remove("hidden");
+        icon.classList.add("rotate-180", "text-red-500");
+        header.classList.remove("bg-transparent" , "text-white");
+        header.classList.add("bg-gray-800", "text-red-500");
+      }
+    });
+  });
