@@ -28,7 +28,7 @@
     
     </head>
     <body>
-        <section class="md:h-screen py-36 flex items-center relative overflow-hidden">
+        <section class="h-screen py-36 flex items-center relative overflow-hidden">
             <div class="absolute inset-0 z-1 bg-[url('../assets/img/traveling-with-off-road-car_BG.webp')] bg-no-repeat bg-center bg-cover"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900 z-2"></div>
             <div class="container mx-auto relative z-3">
@@ -39,33 +39,33 @@
                         <form class="text-start" action="signup-success.html">
                             <div class="grid grid-cols-1">
                                 <div class="mb-4">
-                                    <label class="font-semibold" for="RegisterName">Your Name:</label>
-                                    <input id="RegisterName" type="text" class="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Harry">
+                                    <label class="font-semibold text-red-500" for="RegisterName">Your Name:</label>
+                                    <input id="RegisterName" type="text" class="mt-3 w-full py-2 px-3 h-10 bg-transparent rounded outline-none border text-white border-gray-400 focus:ring-0" placeholder="Z4code">
                                 </div>
 
                                 <div class="mb-4">
-                                    <label class="font-semibold" for="LoginEmail">Email Address:</label>
-                                    <input id="LoginEmail" type="email" class="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="name@example.com">
+                                    <label class="font-semibold text-red-500" for="LoginEmail">Email Address:</label>
+                                    <input id="LoginEmail" type="email" class="mt-3 w-full py-2 px-3 h-10 bg-transparent rounded outline-none border text-white border-gray-400 focus:ring-0" placeholder="name@example.com">
                                 </div>
 
                                 <div class="mb-4">
-                                    <label class="font-semibold" for="LoginPassword">Password:</label>
-                                    <input id="LoginPassword" type="password" class="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Password:">
+                                    <label class="font-semibold text-red-500" for="LoginPassword">Password:</label>
+                                    <input id="LoginPassword" type="password" class="mt-3 w-full py-2 px-3 h-10 bg-transparent rounded outline-none border text-white border-gray-400 focus:ring-0" placeholder="Password">
                                 </div>
 
                                 <div class="mb-4">
                                     <div class="flex items-center w-full mb-0">
-                                        <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 dark:border-gray-800 accent-red-600 checked:appearance-auto dark:accent-red-600 focus:border-red-300 focus:ring-0 focus:ring-offset-0 focus:ring-red-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="AcceptT&amp;C">
+                                        <input class="form-checkbox size-4 appearance-none rounded border border-gray-200 accent-red-600 checked:appearance-auto focus:border-red-300 focus:ring-0 focus:ring-offset-0 focus:ring-red-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="AcceptT&amp;C">
                                         <label class="form-check-label text-slate-400" for="AcceptT&amp;C">I Accept <a href="" class="text-red-500">Terms And Condition</a></label>
                                     </div>
                                 </div>
 
                                 <div class="mb-4">
-                                    <input type="submit" class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-red-500 text-white rounded-md w-full" value="Register">
+                                    <input type="submit" class="py-2 px-5 inline-block tracking-wide align-middle text-base text-center bg-red-500 text-white hover:text-slate-950 font-semibold transition-all duration-300 rounded-md w-full" value="Register">
                                 </div>
 
                                 <div class="text-center">
-                                    <span class="text-slate-400 me-2">Already have an account ? </span> <a href="login.html" class="text-slate-900 dark:text-white font-bold inline-block">Sign in</a>
+                                    <span class="text-slate-400 me-2">Already have an account ? </span> <a href="login.html" class="text-white font-bold inline-block hover:text-red-500 transition-all duration-300">Sign in</a>
                                 </div>
                             </div>
                         </form>
